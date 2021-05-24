@@ -1,7 +1,7 @@
 body {
-background: radial-gradient(52.17% 50% at 7.97% 15.64%, #F9D298 5.8%, rgba(250, 231, 189, 0.1) 80.15%), radial-gradient(84.91% 84.91% at 46.88% 15.09%, #FE99AB 9.45%, rgba(252, 149, 179, 0) 87.31%), linear-gradient(335.76deg, rgba(255, 255, 255, 0.96) 13.9%, rgba(255, 255, 255, 0.68) 44.48%, rgba(255, 255, 255, 0.53) 65.65%, rgba(255, 255, 255, 0.12) 92.26%), linear-gradient(194.06deg, #C955F8 21.52%, rgba(226, 161, 249, 0.6) 40.03%);
-box-sizing: border-box;
-height: 100%;
+    background: radial-gradient(52.17% 50% at 7.97% 15.64%, #F9D298 5.8%, rgba(250, 231, 189, 0.1) 80.15%), radial-gradient(84.91% 84.91% at 46.88% 15.09%, #FE99AB 9.45%, rgba(252, 149, 179, 0) 87.31%), linear-gradient(335.76deg, rgba(255, 255, 255, 0.96) 13.9%, rgba(255, 255, 255, 0.68) 44.48%, rgba(255, 255, 255, 0.53) 65.65%, rgba(255, 255, 255, 0.12) 92.26%), linear-gradient(194.06deg, #C955F8 21.52%, rgba(226, 161, 249, 0.6) 40.03%);
+    box-sizing: border-box;
+    height: 100%;
 }
 
 .header {
