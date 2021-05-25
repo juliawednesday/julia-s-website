@@ -79,9 +79,127 @@ height: 700px;
 }
 
 
-.contact_info {
-
+.footer_image {
+  position: absolute;  
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 100px;                              
 }
+
+.footer_image img {
+width: 270px;
+height: 375px;
+}
+
+
+footer {
+  height: 200px;
+}
+.social_contacts_block {
+position: absolute;
+display: flex;
+align-items: center;
+flex-direction: column;
+width: 450px;
+height: 170px;
+background: radial-gradient(201.57% 160.22% at 14.01% -101.57%, #C955F8 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.39) 43.17%, rgba(249, 210, 152, 0.7) 163.17%), rgba(254, 153, 171, 0.671);
+border: 0.3px solid rgba(255, 255, 255, 0.96);
+backdrop-filter: blur(10px);
+opacity: 30%;
+border-radius: 15px;
+color: #fff;
+font-family: 'Russo One', sans-serif; 
+margin-bottom: 50px;   
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%)                                 
+}
+
+.contact_items_block {
+height: 150px;
+width: 350px;
+align-items: center;
+text-align: center;
+vertical-align: middle;
+}
+
+.social__link {
+	display: block;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*transition: opacity 0.3s;*/
+}
+.social_links {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+  left: 50%;
+  margin-right: -50%;
+}
+
+
+
+.social_link-inst {
+	background-image: url("/images/inst.png");
+	width: 38px;
+	height: 35px;
+}
+
+.social_link-linkedin {
+	background-image: url("/images/linkedin.png");
+	width: 38px;
+	height: 35px;
+}
+
+.social_link-github {
+	background-image: url("/images/github.png");
+	width: 38px;
+	height: 35px;
+}
+
+/*.social {
+	display: flex;
+	align-items: center;
+}
+
+.social__item:not(:last-child) {
+	margin-right: 40px;
+}
+
+.social__link {
+	display: block;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: opacity 0.3s;
+}
+
+.social__link:hover {
+	opacity: 0.8;
+	transition: opacity 0.3s;
+}
+
+.social__link--fb {
+	background-image: url("/img/fb.svg");
+	width: 11px;
+	height: 20px;
+}
+
+.social__link--tw {
+	background-image: url("/img/tw.svg");
+	width: 20px;
+	height: 17px;
+} */
+
+
+
+
+
 
 
 
@@ -89,8 +207,8 @@ height: 700px;
 /* Animations */
 
 .shake-vertical {
-	-webkit-animation: shake-vertical 10s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
-	        animation: shake-vertical 10s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+	-webkit-animation: shake-vertical 11s ease-in-out infinite both;
+	        animation: shake-vertical 11s ease-in-out infinite both;
 }
 
 @-webkit-keyframes shake-vertical {
@@ -103,22 +221,22 @@ height: 700px;
     30%,
     50%,
     70% {
-      -webkit-transform: translateY(-8px);
-              transform: translateY(-8px);
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
     }
     20%,
     40%,
     60% {
-      -webkit-transform: translateY(8px);
-              transform: translateY(8px);
+      -webkit-transform: translateY(10px);
+              transform: translateY(10px);
     }
     80% {
-      -webkit-transform: translateY(6.4px);
-              transform: translateY(6.4px);
+      -webkit-transform: translateY(10px);
+              transform: translateY(10px);
     }
     90% {
-      -webkit-transform: translateY(-6.4px);
-              transform: translateY(-6.4px);
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
     }
   }
   @keyframes shake-vertical {
@@ -131,22 +249,22 @@ height: 700px;
     30%,
     50%,
     70% {
-      -webkit-transform: translateY(-8px);
-              transform: translateY(-8px);
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
     }
     20%,
     40%,
     60% {
-      -webkit-transform: translateY(8px);
-              transform: translateY(8px);
+      -webkit-transform: translateY(10px);
+              transform: translateY(10px);
     }
     80% {
-      -webkit-transform: translateY(6.4px);
-              transform: translateY(6.4px);
+      -webkit-transform: translateY(10px);
+              transform: translateY(10px);
     }
     90% {
-      -webkit-transform: translateY(-6.4px);
-              transform: translateY(-6.4px);
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
     }
   }
   
