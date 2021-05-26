@@ -88,8 +88,8 @@ height: 700px;
 }
 
 .footer_image img {
-width: 270px;
-height: 375px;
+width: 300px;
+height: 410px;
 }
 
 
@@ -103,12 +103,10 @@ align-items: center;
 flex-direction: column;
 width: 450px;
 height: 170px;
-background: radial-gradient(201.57% 160.22% at 14.01% -101.57%, #C955F8 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.39) 43.17%, rgba(249, 210, 152, 0.7) 163.17%), rgba(254, 153, 171, 0.671);
 border: 0.3px solid rgba(255, 255, 255, 0.96);
-backdrop-filter: blur(10px);
-opacity: 30%;
+backdrop-filter: blur(3px);
 border-radius: 15px;
-color: #fff;
+color: rgb(252, 252, 252);
 font-family: 'Russo One', sans-serif; 
 margin-bottom: 50px;   
 left: 50%;
@@ -116,12 +114,24 @@ margin-right: -50%;
 transform: translate(-50%, -50%)                                 
 }
 
+.social_contacts-hover {
+position: absolute;
+width: 450px;
+height: 170px;
+background: radial-gradient(201.57% 160.22% at 14.01% -101.57%, #C955F8 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.39) 43.17%, rgba(249, 210, 152, 0.7) 163.17%), rgba(254, 153, 171, 0.671);
+opacity: 10%;
+z-index: 5;
+}
+
+
 .contact_items_block {
+position: relative;
 height: 150px;
 width: 350px;
 align-items: center;
 text-align: center;
 vertical-align: middle;
+z-index: 10;
 }
 
 .social__link {
@@ -162,109 +172,67 @@ vertical-align: middle;
 	height: 35px;
 }
 
-/*.social {
-	display: flex;
-	align-items: center;
-}
-
-.social__item:not(:last-child) {
-	margin-right: 40px;
-}
-
-.social__link {
-	display: block;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	transition: opacity 0.3s;
-}
-
-.social__link:hover {
-	opacity: 0.8;
-	transition: opacity 0.3s;
-}
-
-.social__link--fb {
-	background-image: url("/img/fb.svg");
-	width: 11px;
-	height: 20px;
-}
-
-.social__link--tw {
-	background-image: url("/img/tw.svg");
-	width: 20px;
-	height: 17px;
-} */
-
-
-
-
-
-
-
-
 
 /* Animations */
-
-.shake-vertical {
-	-webkit-animation: shake-vertical 11s ease-in-out infinite both;
-	        animation: shake-vertical 11s ease-in-out infinite both;
-}
-
-@-webkit-keyframes shake-vertical {
-    0%,
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-    10%,
-    30%,
-    50%,
-    70% {
-      -webkit-transform: translateY(-10px);
-              transform: translateY(-10px);
-    }
-    20%,
-    40%,
-    60% {
-      -webkit-transform: translateY(10px);
-              transform: translateY(10px);
-    }
-    80% {
-      -webkit-transform: translateY(10px);
-              transform: translateY(10px);
-    }
-    90% {
-      -webkit-transform: translateY(-10px);
-              transform: translateY(-10px);
-    }
+  
+  .floating-item {
+    animation-name: shake-vertical;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: both;
   }
+
   @keyframes shake-vertical {
-    0%,
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
+    0%{
+      -webkit-transform: translateY(12px);
+      transform: translateY(12px);
     }
-    10%,
-    30%,
-    50%,
-    70% {
-      -webkit-transform: translateY(-10px);
-              transform: translateY(-10px);
+    10%{
+      -webkit-transform: translateY(-12px);
+      transform: translateY(-12px);
     }
-    20%,
-    40%,
-    60% {
-      -webkit-transform: translateY(10px);
-              transform: translateY(10px);
+    20%{
+      -webkit-transform: translateY(12px);
+      transform: translateY(12px);
     }
-    80% {
-      -webkit-transform: translateY(10px);
-              transform: translateY(10px);
+    30%{
+      -webkit-transform: translateY(-12px);
+      transform: translateY(-12px);
     }
-    90% {
-      -webkit-transform: translateY(-10px);
-              transform: translateY(-10px);
+    40%{
+      -webkit-transform: translateY(12px);
+      transform: translateY(12px);
+    }
+    50%{
+      -webkit-transform: translateY(-12px);
+      transform: translateY(-12px);
+    }
+    60%{
+      -webkit-transform: translateY(12px);
+      transform: translateY(12px);
+    }
+    70%{
+      -webkit-transform: translateY(-12px);
+      transform: translateY(-12px);
+    }
+    80%{
+      -webkit-transform: translateY(12px);
+      transform: translateY(12px);
+    }
+    90%{
+      -webkit-transform: translateY(-12px);
+      transform: translateY(-12px);
+    }
+    100%{
+      -webkit-transform: translateY(12px);
+      transform: translateY(12px);
     }
   }
   
+  
+
+
+
