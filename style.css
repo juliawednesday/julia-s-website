@@ -1,5 +1,8 @@
+@import "/normalize.css";
+
+
 body {
-    background: radial-gradient(52.17% 50% at 7.97% 15.64%, #F9D298 5.8%, rgba(250, 231, 189, 0.1) 80.15%), radial-gradient(84.91% 84.91% at 46.88% 15.09%, #FE99AB 9.45%, rgba(252, 149, 179, 0) 87.31%), linear-gradient(335.76deg, rgba(255, 255, 255, 0.96) 13.9%, rgba(255, 255, 255, 0.68) 44.48%, rgba(255, 255, 255, 0.53) 65.65%, rgba(255, 255, 255, 0.12) 92.26%), linear-gradient(194.06deg, #C955F8 21.52%, rgba(226, 161, 249, 0.6) 40.03%);
+    background: radial-gradient(119.54% 50.28% at 107.94% 103.28%, #F9D298 9.98%, rgba(255, 255, 255, 0) 100%), radial-gradient(120.6% 50.73% at 0% 82.43%, rgba(226, 161, 249, 0.67) 10.42%, rgba(255, 255, 255, 0) 100%), radial-gradient(52.17% 50% at 7.97% 15.64%, #F9D298 5.8%, rgba(250, 231, 189, 0.1) 80.15%), radial-gradient(84.91% 84.91% at 46.88% 15.09%, #FE99AB 9.45%, rgba(252, 149, 179, 0) 87.31%), linear-gradient(335.76deg, rgba(255, 255, 255, 0.96) 13.9%, rgba(255, 255, 255, 0.68) 44.48%, rgba(255, 255, 255, 0.53) 65.65%, rgba(255, 255, 255, 0.12) 92.26%), linear-gradient(194.06deg, #C955F8 21.52%, rgba(226, 161, 249, 0.6) 40.03%);
     box-sizing: border-box;
     height: 100%;
 }
@@ -28,7 +31,7 @@ body {
 }
 
 .menu_list_item {
-    color: rgb(53, 52, 53);
+    color: #363A63;
     transition: color 0.4s;
 }
 
@@ -41,9 +44,9 @@ transition: color 0.4s;
 .first_container {
 width: 700px;
 height: 350px;
-background: linear-gradient(180deg, rgba(255, 255, 255, 0) 13.66%, rgba(255, 255, 255, 0.75) 104.62%), rgba(255, 255, 255, 0.15);
-border: 0.2px solid rgba(255, 255, 255, 0.96);
-backdrop-filter: blur(3px);
+background: linear-gradient(180deg, rgba(255, 255, 255, 0) 35.66%, rgba(255, 255, 255, 0.75) 130.62%), rgba(255, 255, 255, 0.15);
+border: 0.01px solid rgba(255, 255, 255, 0.96);
+backdrop-filter: blur(5px);
 border-radius: 15px;
 margin-left: 50px;
 display: flex;
@@ -69,7 +72,7 @@ margin-bottom: 100px;
 }
 
 .first_image img {
-    width: 508px;
+  width: 508px;
 	height: 608px; 
 }
 
@@ -78,6 +81,9 @@ width: 100%;
 height: 700px;
 }
 
+
+
+/* Footer */
 
 .footer_image {
   position: absolute;  
@@ -88,14 +94,15 @@ height: 700px;
 }
 
 .footer_image img {
-width: 300px;
-height: 410px;
+width: 380px;
+height: 460px;
 }
 
 
 footer {
-  height: 200px;
+  height: 250px;
 }
+
 .social_contacts_block {
 position: absolute;
 display: flex;
@@ -103,7 +110,6 @@ align-items: center;
 flex-direction: column;
 width: 450px;
 height: 170px;
-border: 0.3px solid rgba(255, 255, 255, 0.96);
 backdrop-filter: blur(3px);
 border-radius: 15px;
 color: rgb(252, 252, 252);
@@ -118,9 +124,11 @@ transform: translate(-50%, -50%)
 position: absolute;
 width: 450px;
 height: 170px;
-background: radial-gradient(201.57% 160.22% at 14.01% -101.57%, #C955F8 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.39) 43.17%, rgba(249, 210, 152, 0.7) 163.17%), rgba(254, 153, 171, 0.671);
-opacity: 10%;
+border: 0.01px solid rgba(255, 255, 255, 0.96);
+background: radial-gradient(451.57% 200.22% at 204.01% -100.57%, #C955F8 30%, rgba(255, 255, 255, 0) 100%);
+opacity: 30%;
 z-index: 5;
+border-radius: 15px;
 }
 
 
@@ -139,37 +147,45 @@ z-index: 10;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	/*transition: opacity 0.3s;*/
-}
-.social_links {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  align-items: center;
-  justify-content: space-between;
-  width: 150px;
-  left: 50%;
-  margin-right: -50%;
 }
 
+.social_links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.social_links-block {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 180px;
+}
+
+.social__item {
+margin-left: 7px;
+margin-right: 7px;
+}
 
 
 .social_link-inst {
 	background-image: url("/images/inst.png");
-	width: 38px;
-	height: 35px;
+	width: 42px;
+	height: 40px;
 }
 
 .social_link-linkedin {
 	background-image: url("/images/linkedin.png");
-	width: 38px;
-	height: 35px;
+	width: 42px;
+	height: 40px;
 }
 
 .social_link-github {
 	background-image: url("/images/github.png");
-	width: 38px;
-	height: 35px;
+	width: 42px;
+	height: 40px;
 }
 
 
