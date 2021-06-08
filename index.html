@@ -12,12 +12,12 @@
     <title>Julia's website</title>
 </head>
 <body>
-        <header class="header">
+        <header class="header" id="home">
             <div class="menu_list_container">
                 <ul class="menu_list">
-                    <li class="menu_list_item">Home</li>
-                    <li class="menu_list_item">Portfolio</li>
-                    <li class="menu_list_item">Contacts</li>
+                    <li><a href="#home" class="menu_list_item">Home</a></li>
+                    <li><a href="#portfolio" class="menu_list_item">Portfolio</a></li>
+                    <li><a href="#contacts" class="menu_list_item">Contacts</a></li>
                 </ul>
             </div>
 
@@ -27,6 +27,7 @@
                 <img src="/images/first.png" alt="img">
             </div>
             <div class="first_container">
+                <a name="home"></a>
                 <div class="first_container-hover"></div>
                 <div class="introduction">
                     <h1>Hey, I'm Julia</h1>
@@ -35,18 +36,32 @@
             </div>
         </section>
         <section class="portfolio-container">
-            <h1>Portfolio</h1>
+            <h1 id="portfolio">Portfolio</h1>
             <div class="grid-container">
-                <div>1</div>
-                <div>2</div>
-                <div><h3>Great things coming soon...</h3></div>
-                <div><h3>Great things coming soon...</h3></div>
-                <div><h3>Great things coming soon...</h3></div>
-                <div><h3>Great things coming soon...</h3></div>
+                <div class="portfolio_item grid-container-box">
+
+                    <a href="https://myadventure.juliawednesday.com/"><h4 class="link-title">See full website</h4></a>
+                    <img src="/images/adventure.gif" alt="website">
+<div class="portfolio_text-block">
+    <span>Technologies: HTML5,  Swiper, JavaScript, CSS3:Grid, FlexBox, Animation.</span>
+</div>
+                
+
+
+                </div>
+                <div class="portfolio_item grid-container-box">
+                    <a href="https://smoothie.juliawednesday.com/"><h4 class="link-title">See full website</h4></a>
+                    <img src="/images/smoothie.gif" alt="website"> 
+                  <div class="portfolio_text-block"><span>Technologies: HTML5, CSS3:Grid, FlexBox, Animation.</span></div>  
+                </div>
+                <div class="grid-container-box"><h3>Great things coming soon...</h3></div>
+                <div class="grid-container-box"><h3>Great things coming soon...</h3></div>
+                <div class="grid-container-box"><h3>Great things coming soon...</h3></div>
+                <div class="grid-container-box"><h3>Great things coming soon...</h3></div>
               </div>
         </section>
 <footer>
-    <section class="contact_info">
+    <section class="contact_info" id="contacts">
 <div class="footer_image">
     <img src="/images/footer.png" class="floating-item" alt="robot">
 </div>
