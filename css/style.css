@@ -1,9 +1,9 @@
 @import "../css/normalize.css";
-@import "../css/media.css";
 
 html {
   scroll-behavior: smooth;
   overflow-anchor: none;
+  overflow: auto;
 }
 body {
   background: radial-gradient(
@@ -36,7 +36,10 @@ body {
     ),
     linear-gradient(194.06deg, #c955f8 21.52%, rgba(226, 161, 249, 0.6) 40.03%);
   box-sizing: border-box;
+  background-repeat: no-repeat;
   height: 100%;
+  min-width: 1050px;
+  max-width: 1920px;
 }
 
 .header {
@@ -52,12 +55,15 @@ h1 {
 }
 
 .menu_list_container {
-  display: block;
+  position: relative;
+  top: 0;
   height: 30px;
   margin-top: 40px;
-  margin-left: 10%;
   margin-bottom: 100px;
-  width: 320px;
+  width: 300px;
+  margin-right: -95%;
+  margin-left: 50px;
+  left: 5%;
 }
 
 .menu_list {
@@ -79,16 +85,41 @@ h1 {
   transition: color 0.4s;
 }
 
+.first {
+  width: 1050px;
+  height: 550px;
+  margin: 0px auto;
+}
+
 .first_container {
   width: 700px;
   height: 350px;
-  margin-left: 10%;
+  position: absolute;
+  margin-top: 170px;
   display: flex;
   flex-direction: row;
-  position: relative;
   z-index: 20;
   margin-bottom: 180px;
   backdrop-filter: blur(6px);
+  margin-right: -75%;
+  margin-left: 50px;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.first_container-hover {
+  position: inherit;
+  width: 100%;
+  height: 100%;
+  border: 0.01px solid rgba(255, 255, 255, 0.96);
+  background: linear-gradient(
+    360deg,
+    rgba(255, 255, 255, 1) -1.04%,
+    rgba(255, 255, 255, 0) 79.24%
+  );
+  opacity: 60%;
+  z-index: 5;
+  border-radius: 15px;
 }
 
 .first_container h3 {
@@ -108,23 +139,8 @@ h1 {
   display: inline-block;
 } */
 
-.first_container-hover {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 0.01px solid rgba(255, 255, 255, 0.96);
-  background: linear-gradient(
-    360deg,
-    rgba(255, 255, 255, 1) -1.04%,
-    rgba(255, 255, 255, 0) 79.24%
-  );
-  opacity: 60%;
-  z-index: 5;
-  border-radius: 15px;
-}
-
 .introduction {
-  margin-left: 30px;
+  margin-left: 50px;
   margin-top: 45px;
   width: 400px;
   z-index: 10;
@@ -133,7 +149,9 @@ h1 {
 .first_image {
   position: absolute;
   z-index: 1;
-  right: 25%;
+  left: 35%;
+  margin-right: -65%;
+  transform: translate(-50%, -50%);
   top: 30px;
 }
 
@@ -225,10 +243,7 @@ h1 {
 
 .footer_image {
   position: absolute;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  margin-bottom: 100px;
+  bottom: 0;
 }
 
 .footer_image img {
@@ -236,8 +251,11 @@ h1 {
   height: 460px;
 }
 
-footer {
-  height: 260px;
+.contact_info {
+  position: relative;
+  display: flex;
+  place-content: center center;
+  height: 300px;
 }
 
 .social_contacts_block {
@@ -252,13 +270,10 @@ footer {
   color: rgb(252, 252, 252);
   font-family: "Russo One", sans-serif;
   margin-bottom: 50px;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
 }
 
 .social_contacts-hover {
-  position: absolute;
+  position: inherit;
   width: 100%;
   height: 100%;
   border: 0.01px solid rgba(255, 255, 255, 0.96);
@@ -396,3 +411,5 @@ footer {
     transform: translateY(12px);
   }
 }
+
+@import "../css/media.css";
