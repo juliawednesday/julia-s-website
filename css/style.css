@@ -222,11 +222,24 @@ h1 {
   overflow: hidden;
 }
 
-.link-title {
+
+
+.links {
   color: #fff;
-  top: 5px;
-  text-decoration: none;
+ text-decoration: underline; 
 }
+
+.link-title {
+color: #fff;
+top: 5px;
+}
+
+.link-title span {
+  display:inline-block;
+  border-bottom:0.5px solid #fff;
+  padding-bottom: 0.5px;
+}
+
 
 .portfolio_item img {
   width: 100%;
