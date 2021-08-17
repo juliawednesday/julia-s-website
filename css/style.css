@@ -1,4 +1,3 @@
-@import "../css/normalize.css";
 
 html {
   scroll-behavior: smooth;
@@ -955,4 +954,4 @@ footer {
   }
 }
 
-@import "../css/media.css";
+/*@import "/css/media.css";*/
