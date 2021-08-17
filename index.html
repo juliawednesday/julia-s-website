@@ -12,28 +12,65 @@
     <title>Julia's website</title>
 </head>
 <body>
+<!--Preloader-->
+<div class="site-container"></div>
+    <div class="preloader" id="preloader">
+        <div class="cssload-dots">
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+        </div>
+        
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12" ></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7" result="goo" ></feColorMatrix>
+                    <!--<feBlend in2="goo" in="SourceGraphic" result="mix" ></feBlend>-->
+                </filter>
+            </defs>
+        </svg>
+    </div>
+<!--Preloader end-->
+
         <header class="header" id="home">
             <div class="menu_list_container">
+                <nav class="menu_list_box container">
                 <ul class="menu_list">
                     <li><a href="#home" class="menu_list_item">Home</a></li>
                     <li><a href="#portfolio" class="menu_list_item">Portfolio</a></li>
                     <li><a href="#contacts" class="menu_list_item">Contacts</a></li>
                 </ul>
             </div>
+        </nav>
         </header>
-        <section class="first">
-            <div class="first_image floating-item">
-                <img src="/images/first.png" alt="img">
-            </div>
+
+            <main class="main">
+                <section class="first container">
+                    <div class="first-block">
             <div class="first_container">
                 <div class="first_container-hover"></div>
                 <a name="home"></a>
                 <div class="introduction">
                     <h1>Hey, I'm Julia</h1>
-                    <h3>Creating website layout/user interface by using HTML5/CSS3, JavaScript, with responive and flexibe UI.</h3>
-                       <!--<h4 class="mini-title">Each new project is better than the previous one.</h4>--> 
+                    <h3>I recently began to be fascinated by web programming.
+                        Creating website layout with responsive and flexible UI. 
+                        Technologies:</h3>
+                        <ul class="technologies_list">
+                            <li>— HTML5;</li>
+                            <li>— CSS3;</li>
+                            <li>— GIT;</li>
+                            <li>— JavaScript ES6+;</li>
+                            <li>— Figma.</li>
+                        </ul>
                 </div>
             </div>
+            <div class="first_image floating-item">
+                <img src="/images/first.png" alt="img">
+            </div>
+        </div>
 
         </section>
         <section class="portfolio-container">
@@ -59,6 +96,7 @@
                 <div class="grid-container-box last-box"><h3>Great things coming soon...</h3></div>
               </div>
         </section>
+    </section>
 <footer>
     <section class="contact_info" id="contacts">
 <div class="footer_image">
@@ -89,7 +127,9 @@
 
     </section>
 </footer>
-
+</main>
+</div>
+<script src="js/main.js"></script>
 </body>
 </style>
 
